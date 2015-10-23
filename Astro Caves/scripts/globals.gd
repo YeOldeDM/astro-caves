@@ -3,8 +3,8 @@ extends Node
 const SLOWBALL_SPEED = 21
 
 
-var OUR_X=0
-var OUR_Y=1
+var OUR_X=2
+var OUR_Y=2
 var CURRENT_STAGE
 
 var stage00 = preload('res://scenes/stage0-0.xml')
@@ -26,13 +26,16 @@ var stage71 = preload('res://scenes/stage7-1.xml')
 var stage22 = preload('res://scenes/stage2-2.xml')
 var stage32 = preload('res://scenes/stage3-2.xml')
 
+
+
 func _set_stage():
 	var stage_name = str('stage',str(OUR_X),str(OUR_Y))
+	CURRENT_STAGE.queue_free()
 	if get(stage_name):
-		CURRENT_STAGE.queue_free()
 		var new_stage = get(stage_name)
 		var l = new_stage.instance()
-		get_node('/root/Game').add_child(l)
+		print(get_node('/root').get_child(0))
+		get_node('/root/').get_child(0).add_child(l)
 		
 		var pip = get_node('/root/Game/HUD/root/Minimap/sprite')
 		var x = (OUR_X*2)+OUR_X

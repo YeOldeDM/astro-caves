@@ -26,9 +26,11 @@ func shoot():
 	get_node('/root/globals').CURRENT_STAGE.add_child(s)
 	
 	var player = get_node('/root/Game/Toon')
-	var vec = (player.get_pos() - get_pos())
+	if player:
+		var vec = (player.get_pos() - get_pos())
 	
-	s.set_linear_velocity(vec.normalized()*120)
-	
+		s.set_linear_velocity(vec.normalized()*120)
+	else:
+		s.queue_free()
 
 

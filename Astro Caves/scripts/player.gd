@@ -8,7 +8,7 @@ var blink_timer=0
 var blink_freq1 = 2
 var blink_freq2 = 3
 
-var SPEED = 25
+var SPEED = 32
 var ACCEL = 135
 var facing = 1		# 1 = facing left, -1 = facing right
 
@@ -156,8 +156,8 @@ func _integrate_forces(s):
 func _ready():
 	set_process(true)
 	jets = get_node('jets')
-	get_node('/root/globals').OUR_X=0
-	get_node('/root/globals').OUR_Y=1
+	#get_node('/root/globals').OUR_X=2
+	#get_node('/root/globals').OUR_Y=2
 
 	
 func _process(delta):
@@ -167,11 +167,12 @@ func _process(delta):
 	if death_timer >= 0:
 		death_timer += delta
 	if death_timer > 2.0:
+		get_node('/root/globals').CURRENT_STAGE.queue_free()
 		get_tree().change_scene('res://scenes/game_over.scn')
 	
 	## Dampen movement when not thrusting ##
 	if not jets.is_emitting():
-		set_linear_velocity(get_linear_velocity()*0.993)
+		set_linear_velocity(get_linear_velocity()*0.7)
 	
 	var change=false
 	

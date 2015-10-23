@@ -16,13 +16,13 @@
 
 	</resource>
 	<resource type="SampleLibrary" path="local://3">
-		<dictionary name="samples/ouch" shared="false">
+		<dictionary name="samples/pickup" shared="false">
 			<string> "db" </string>
-			<real> 0 </real>
+			<real> 2 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/ouch1.smp">  </resource>
+			<resource  resource_type="Sample" path="res://sfx/bleep1.wav">  </resource>
 		</dictionary>
 		<dictionary name="samples/laser_bullet_fire" shared="false">
 			<string> "db" </string>
@@ -32,13 +32,13 @@
 			<string> "sample" </string>
 			<resource  resource_type="Sample" path="res://sfx/laser_bullet_fire.wav">  </resource>
 		</dictionary>
-		<dictionary name="samples/pickup" shared="false">
+		<dictionary name="samples/ouch" shared="false">
 			<string> "db" </string>
-			<real> 2 </real>
+			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/bleep1.wav">  </resource>
+			<resource  resource_type="Sample" path="res://sfx/ouch1.smp">  </resource>
 		</dictionary>
 
 	</resource>
@@ -329,9 +329,10 @@
 							<string> "current" </string>
 							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="2" shared="false">
+							<array  len="3" shared="false">
 								<string> "res://scripts/player.gd" </string>
 								<string> "res://scripts/globals.gd" </string>
+								<string> "res://scripts/death_laser.gd" </string>
 							</array>
 						</dictionary>
 					</dictionary>
