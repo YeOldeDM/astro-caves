@@ -4,7 +4,7 @@ const SLOWBALL_SPEED = 21
 
 
 var OUR_X=2
-var OUR_Y=2
+var OUR_Y=1
 var CURRENT_STAGE
 
 var stage00 = preload('res://scenes/stage0-0.xml')

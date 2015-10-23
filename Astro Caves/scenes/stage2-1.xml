@@ -175,7 +175,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 3 </int>
+							<int> 1 </int>
 							<string> "sources" </string>
 							<array  len="4" shared="false">
 								<string> "res://scenes/stage.gd" </string>

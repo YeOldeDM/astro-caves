@@ -204,13 +204,13 @@
 				<resource  resource_type="Script" path="res://scripts/player.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -18.4994, -12.6505 </vector2>
+							<vector2> -110.413, -83.9113 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -230,7 +230,7 @@
 							<string> "snap_step" </string>
 							<vector2> 8, 8 </vector2>
 							<string> "zoom" </string>
-							<real> 26.649511 </real>
+							<real> 3.794778 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
