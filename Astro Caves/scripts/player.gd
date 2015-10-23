@@ -270,12 +270,13 @@ func get_hit(origin=null, amt=1):
 				die()
 			
 		#kick-back
+		"""
 		if origin:
 			var target_pos = origin.get_pos()
 			var my_pos = get_pos()
 			var vect = target_pos - my_pos
 			set_linear_velocity(-vect*4)
-		
+		"""
 		is_hit=true
 		
 	#blit the HUD's life bar
