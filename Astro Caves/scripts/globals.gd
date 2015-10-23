@@ -11,10 +11,18 @@ var stage00 = preload('res://scenes/stage0-0.xml')
 var stage10 = preload('res://scenes/stage1-0.xml')
 var stage20 = preload('res://scenes/stage2-0.xml')
 var stage30 = preload('res://scenes/stage3-0.xml')
+var stage40 = preload('res://scenes/stage4-0.xml')
+var stage50 = preload('res://scenes/stage5-0.xml')
+var stage60 = preload('res://scenes/stage6-0.xml')
+var stage70 = preload('res://scenes/stage7-0.xml')
+
 var stage01 = preload('res://scenes/stage0-1.xml')
 var stage11 = preload('res://scenes/stage1-1.xml')
 var stage21 = preload('res://scenes/stage2-1.xml')
 var stage31 = preload('res://scenes/stage3-1.xml')
+var stage41 = preload('res://scenes/stage4-1.xml')
+var stage71 = preload('res://scenes/stage7-1.xml')
+
 var stage22 = preload('res://scenes/stage2-2.xml')
 var stage32 = preload('res://scenes/stage3-2.xml')
 
