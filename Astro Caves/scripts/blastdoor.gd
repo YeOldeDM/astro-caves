@@ -28,7 +28,7 @@ func _process(delta):
 			if hits >= health:
 				print("open!")
 				open=true
-				clear_shapes()
+				#clear_shapes()
 			get_node('sprite').set_frame(hits)
 			
 		else:
@@ -37,6 +37,11 @@ func _process(delta):
 				get_node('animator').play('open')
 				get_node('sound').set_param(1, 1.0)
 				get_node('sound').play('open')
+
+			if get_node('sprite').get_frame() >= 7:
+				clear_shapes()
+				set_process(false)
+
 
 func mob_get_hit(origin,amt):
 	if not open:

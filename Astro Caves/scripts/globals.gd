@@ -43,7 +43,8 @@ func _set_stage():
 		pip.set_pos( Vector2(x,y) )
 	else:
 		print('BAD MAP CALLED! ', str(OUR_X,' ',OUR_Y) )
-		get_tree().quit()	#hard-crash us. This should NEVER happen!
+		print('CLEAN OUT YOUR LOCKER AT THE CLUB, BOB...YOURE F***ING FIRED!!!')
+		get_tree().quit()	#hard-crash us on purpose. This should NEVER happen! unless we go into a room that hasn't been built yet
 
 
 

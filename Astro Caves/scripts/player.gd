@@ -53,8 +53,8 @@ func _integrate_forces(s):
 	var new_facing = facing
 
 	# input commands
-	var joyx = Input.get_joy_axis(0,0)
-	var joyy = Input.get_joy_axis(0,1)
+	var joyx = Input.get_joy_axis(1,0)
+	var joyy = Input.get_joy_axis(1,1)
 	var UP = Input.is_action_pressed('fly_up')
 	var DOWN = Input.is_action_pressed('fly_down')
 	var LEFT = Input.is_action_pressed('fly_left')

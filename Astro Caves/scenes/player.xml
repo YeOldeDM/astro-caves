@@ -16,14 +16,6 @@
 
 	</resource>
 	<resource type="SampleLibrary" path="local://3">
-		<dictionary name="samples/pickup" shared="false">
-			<string> "db" </string>
-			<real> 2 </real>
-			<string> "pitch" </string>
-			<real> 1 </real>
-			<string> "sample" </string>
-			<resource  resource_type="Sample" path="res://sfx/bleep1.wav">  </resource>
-		</dictionary>
 		<dictionary name="samples/laser_bullet_fire" shared="false">
 			<string> "db" </string>
 			<real> -5 </real>
@@ -31,6 +23,14 @@
 			<real> 2 </real>
 			<string> "sample" </string>
 			<resource  resource_type="Sample" path="res://sfx/laser_bullet_fire.wav">  </resource>
+		</dictionary>
+		<dictionary name="samples/pickup" shared="false">
+			<string> "db" </string>
+			<real> 2 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  resource_type="Sample" path="res://sfx/bleep1.wav">  </resource>
 		</dictionary>
 		<dictionary name="samples/ouch" shared="false">
 			<string> "db" </string>
@@ -204,7 +204,7 @@
 				<resource  resource_type="Script" path="res://scripts/player.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
@@ -327,7 +327,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 0 </int>
+							<int> 1 </int>
 							<string> "sources" </string>
 							<array  len="3" shared="false">
 								<string> "res://scripts/player.gd" </string>
