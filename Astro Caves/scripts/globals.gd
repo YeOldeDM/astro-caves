@@ -3,7 +3,7 @@ extends Node
 const SLOWBALL_SPEED = 21
 
 
-var OUR_X=2
+var OUR_X=0
 var OUR_Y=1
 var CURRENT_STAGE
 
